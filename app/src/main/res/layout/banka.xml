@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ODEME YAP"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="61dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAYLAS"
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView33"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ManasBus Sozlesmelerini  Kabul Ediyorum"
+        android:id="@+id/checkBox"
+        android:layout_above="@+id/button2"
+        android:layout_toEndOf="@+id/textView33"
+        android:checked="false" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/checkBox"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignEnd="@+id/button3">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Kart Sahibinin Adi-Soyadi"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:maxLength="19"
+            android:layout_above="@+id/editText6"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Kart Numarasi"
+            android:ems="10"
+            android:id="@+id/editText6"
+            android:maxLength="19"
+            android:layout_above="@+id/editText8"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText8"
+            android:text="Son Kullanma Tarihi"
+            android:maxLength="19"
+            android:layout_above="@+id/editText7"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText7"
+            android:text="CVC2"
+            android:maxLength="3"
+            android:layout_above="@+id/imageView5"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ssc"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/editText7" />
+    </RelativeLayout>
+
+</RelativeLayout>
